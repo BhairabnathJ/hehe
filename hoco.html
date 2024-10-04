@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homecoming Proposal</title>
+    <link rel="stylesheet" href="hoco.css">
+</head>
+<body>
+    <!-- Welcome Text with 3D Effect -->
+    <h1 class="welcome-text">Welcome Ly Nguyen</h1>
+
+    <!-- Container for Hearts -->
+    <div class="screen"></div>
+    <div class="heart"></div>
+
+    <!-- Start Button to Begin Questions -->
+    <div id="start-container">
+        <button id="start-button">Press me</button>
+    </div>
+
+    <!-- Questions Container -->
+    <div id="questions-container" class="hidden">
+        <p id="question-text"></p>
+        <input type="text" id="answer-box" />
+        <button id="next-button">Next</button>
+    </div>
+
+    <!-- Final Question Container -->
+    <div id="final-container" class="hidden">
+        <p>Will you go to homecoming with me?</p>
+        <div class="buttons">
+            <button id="yes-button" onclick="goToNextPage()">YES</button>
+            <button id="no-button">NO</button>
+        </div>
+    </div>
+
+    <script src="hoco.js"></script>
+</body>
+</html>
